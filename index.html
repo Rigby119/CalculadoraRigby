@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Calculadora</div>
+        <input type="text" class="display" placeholder="0" disabled>
+        
+        <div class="buttons">
+            <!--Primera línea-->
+            <button class="button clear" style="grid-column: span 2;" onclick="cls()">Clear</button>
+            <button class="button clear" onclick="del()">Del</button>
+            <button class="button operator" onclick="operatorWrite('/')">/</button>
+            <!--Segunda línea-->
+            <button class="button" onclick="numWrite(7)">7</button>
+            <button class="button" onclick="numWrite(8)">8</button>
+            <button class="button" onclick="numWrite(9)">9</button>
+            <button class="button operator" onclick="operatorWrite('*')">*</button>
+            <!--Tercera línea-->
+            <button class="button" onclick="numWrite(4)">4</button>
+            <button class="button" onclick="numWrite(5)">5</button>
+            <button class="button" onclick="numWrite(6)">6</button>
+            <button class="button operator" onclick="operatorWrite('+')">+</button>
+            <!--Cuarta línea-->
+            <button class="button" onclick="numWrite(1)">1</button>
+            <button class="button" onclick="numWrite(2)">2</button>
+            <button class="button" onclick="numWrite(3)">3</button>
+            <button class="button operator" onclick="operatorWrite('-')">-</button>
+            <!--Quinta línea-->
+            <button class="button" style="grid-column: span 2;" onclick="numWrite(0)">0</button>
+            <button class="button" onclick="dot()">.</button>
+            <button class="button equals" onclick="result()">=</button>
+        </div>
+    </div>
+</body>
+</html>
